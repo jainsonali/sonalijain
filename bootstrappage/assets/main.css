@@ -1,0 +1,438 @@
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:white;
+}
+header{
+    position: absolute;
+    width:100%;
+    z-index: 60;
+    color: white;
+    top:10%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding:5px;
+}
+header .logo{
+    text-transform: uppercase;
+}
+header h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    padding:10px 0px;
+}
+header .list ul li a i{
+        padding: 20px;
+    font-size: 18px;
+}
+header .ham_menu span.glyphicon{
+    position: fixed;
+    font-size: 24px;
+    display: inline-block;
+    padding: 30px;
+    top: 9%;
+    right: 6%;
+}
+header .ham_menu input{
+         position: fixed;
+    top: 11%;
+    right: 8.3%;
+    height: 50px;
+    width: 22px;
+    color: white;
+    opacity: 0;
+}
+header .menu{
+   opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+header .ham_menu input:checked header .menu{
+   opacity: 1;
+    z-index: 100;
+}
+.heading_caption{
+    top:45%;
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+}
+.heading{
+    font-size: 75px;
+    text-transform: capitalize;
+}
+.paragraph{
+    line-height: 3;
+   font-size: 28px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.section1{
+    margin:30px auto;
+     font-family: 'Muli', sans-serif;
+}
+.section1 h1,.section8 h1,.section9 h1{
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 35px;
+   letter-spacing: 3px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+        text-align: center;
+    text-transform: capitalize;
+}
+.section1 p{
+        font-size: 1.2em;
+    color: #545151;
+    letter-spacing: 1px;
+    line-height: 1.9em;
+    text-align: center;
+    color: #615E5E;
+}
+.section1 h3{
+    padding:20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6FDBFF;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 4px;
+}
+/*
+.section1 h3:first-child{
+     border-left: 2px solid #6FDBFF;
+     border-right: 2px solid #6FDBFF;
+     border-top: 2px solid #6FDBFF;
+    color: #FF7FA2;
+}
+*/
+.section1 h3:hover{
+     border-left: 2px solid #6FDBFF;
+     border-right: 2px solid #6FDBFF;
+     border-top: 2px solid #6FDBFF;
+    color: #FF7FA2;
+}
+.section1 .image-cover{
+    border:2px solid #FFD9E4;
+    padding:10px;
+}
+.section1 .image-cover:hover{
+    background-color:#6FDBFF;
+    border:2px solid #FF2F68;
+}
+.section2{
+    margin:50px 0px;
+    background-color: black;
+}
+.section2 .train_images{
+    padding: 0px;
+}
+.section3,.section4,.section7{
+     margin:80px 0px;
+}
+.section3 .section3_div1{
+    border:10px solid #ABEAFF;
+    padding: 0px;
+    width:47%;
+}
+.section2 .para_carousel{
+    margin:70px 10px;
+}
+.section2 .para_carousel h2{
+        color: #fff;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+.section2 .para_carousel h3{
+    font-size: 1.5em;
+    color: #ff2f68;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+  .section2 .carousel-indicators {
+    bottom: -30%;
+}
+.section4 h3,.section6 h1,.section8 h1{
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 0.6em;
+    text-align: center;
+    text-transform: capitalize;
+     font-family: 'Muli', sans-serif;
+}
+.section4 .coach,.section9{
+    margin-top: 50px;
+    
+}
+.section4 .coach img{
+    position: relative;
+}
+.section4 .coach_info{
+    position: absolute;
+    background-color: #00bfff; 
+    width:90%;
+    height:50%;
+    bottom:0px;
+    left: 15px;
+    transition: 1s;
+}
+.section4 .coach_info h4{
+    color: #000000;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.section4 .coach_info p{
+    color: #FFFFFF;
+    font-size: .9em;
+}
+.section4 .coach_info ul li a i{
+    height: 34px;
+    width: 34px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    border-radius: 50%;
+    margin:10px;
+}
+.section4 .coach_info:hover{
+    padding:50px 10px;
+     height:100%;
+    color: #000000;
+    background-color: rgba(0,0,0,0.5);
+}
+.section6 .gallery{
+    padding:7px;
+    position: relative;
+/*
+    animation:gallery 1s 3 alternate;
+    animation-delay: 2s;
+*/
+    overflow: hidden;
+    transition: 1s;
+}
+/*
+@keyframes gallery{
+    from{transform: scale(0,1);}
+    to{transform: scale(1,1);}
+}
+*/
+/*
+.section6 .gallery .images:hover{
+    transform: scale(1.2,1.2);
+}
+*/
+.section6 .gallery .mask{
+    position: absolute;
+    top:7px;
+    width:97%;
+    height:95%;
+    opacity: 0;
+    left:7px;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+.section6 .gallery:hover .mask{
+  opacity: 1;
+} 
+.section7,.section9{
+    background-image:url(images/test.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color:white;
+     text-align: left;
+}
+.section7 h1{
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin: 50px 0px;
+    text-align: center;
+    text-transform: capitalize;
+     font-family: 'Muli', sans-serif;
+}
+.section7 .testimonials_div1{
+    margin: 20px;
+    
+}
+.section7 .testimonials{
+    border:2px solid rgba(255,255,255,0.2);
+    padding:10px;
+    position: relative;
+}
+.section7 h3{
+    color:#FF2F68;
+    font-weight: 600;
+    text-transform: capitalize;
+   
+}
+.section7 .testimonials_div2{
+    position: absolute;
+    bottom:50%;
+    left:0px;
+    border:10px solid rgba(255,255,255,0.2);
+}
+.section7 .testimonial_para{
+    padding:20px 30px;
+    margin: 80px 0px;
+    background-color: rgba(255,255,255,0.2);
+}
+.section7 .testimonial_para p{
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.section8 .register{
+   margin: 10px;
+    transition: 0.5s;
+    padding-bottom: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+.section8 h4{
+    font-size: 1.2em;
+    color: #fff;
+    padding:5px 0px;
+    background: #00bfff;
+    font-weight: 300;
+    position: absolute;
+       transform: skew(30deg,-30deg);
+    top: 0.6em;
+    left: -1em;
+    width: 133px;
+    letter-spacing: 1px;
+}
+.section8 .register:hover{
+    transform: scale(1.1,1.1);
+}
+.section8 .register p{
+    padding: 22px 0px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: #000;
+}
+.section8 .register a{
+    font-size: 12px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: #ff2f68;
+    text-decoration: none;
+    border: 2px solid #ff2f68;
+    box-shadow: 0 0 black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.section9 h3{
+    margin-top: 0px;
+    text-align: center;
+     padding:20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 600;
+    color:black;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+.section9 form{
+    text-align: center;
+}
+.section9 form input{
+    background: rgba(255,255,255,0.4);
+    border:none;
+    height:40px;
+    width:100%;
+    margin:5px;
+    padding: 10px;
+}
+.section9 form textarea{
+    background: white;
+    opacity: 0.3;
+    border:none;
+   resize: none;
+    margin:5px;
+    width: 100%;
+    
+}
+.section9 form input[type="reset"],.section9 form input[type="submit"] {
+    outline: none;
+    padding: 13px 0;
+    font-size: 12px;
+    color: #fff;
+    background: #ff2f68;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.section9 form input[type="reset"]:hover,.section9 form input[type="submit"]:hover{
+    background: rgba(255,255,255,0.4);
+}
+.section3 .videolayer{
+    width:100%;
+    overflow: hidden;
+    position: relative; text-align: center;
+}
+.section3 .text{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    color:white;
+    top:0px;
+    width:100%;
+   padding: 150px 0px ;
+    left:0px;
+    height:100%;
+}
+.section3 .text h3{
+    font-size: 3em;
+    color: #FFF;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 0.6em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.section3 .text p{
+        color: #00bfff!important;
+    margin-bottom: 2em !important;
+}
+.section3 .text form input{
+    text-align: center;
+     font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: 0px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.section3 .text form input[type="email"]{
+    width: 50%;
+    padding: 8px 17px;
+    background: rgba(255, 255, 255, 0.31);
+    color: #212121;
+    border: 1px solid rgba(165, 165, 165, 0.29);
+   
+}
+.section3 .text form input[type="submit"]{
+    width: 18%;
+    margin: 0px;
+    padding: 8px 0;
+    background: #ff2f68;
+    color: #fff;
+    border: 1px solid #ff2f68;
+}
