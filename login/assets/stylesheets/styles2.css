@@ -1,0 +1,67 @@
+body{
+    background-image: url("../../images/f-2.jpg");
+    background-size: cover;
+}
+.welcome{
+    background-color:rgba(50,5,14,0.7) ;
+    color: white;
+    height: 80px;
+}
+.user{
+    background-color: rgba(0,0,0,0.5);
+    height:40px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+.logout{
+    border:none;
+    height:50px;
+    width:40%;
+    background-color: rgba(50,5,14,0.7);
+    color:white;
+    margin:20px 50px 20px 20px;
+    box-shadow: inset 0px 1px 13px 4px black;
+}
+.user ul{
+    list-style: none;
+}
+.user ul li{
+   float: left;
+    padding: 5px 60px;
+}
+.user a{
+    color:white;
+}
+.view{
+    background-color: rgba(245,255,255,0.3);
+}
+#myaccount{
+    background-color: rgba(245,255,255,0.5);
+}
+.circle{
+    height: 50px;
+    width:50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin:22px;
+    background-color:rgba(245,255,255,0.5);
+}
+.circle h1{
+   margin:0px;
+    padding:7px 14px;
+}
+.red{
+    background-color: antiquewhite;
+}
+.green{
+    background-color: greenyellow;
+}
+button{
+    border:none;
+    height:44px;
+    width:18%;
+    background-color: rgba(50,5,14,0.7);
+    color:white;
+    margin:20px 50px 20px 20px;
+}

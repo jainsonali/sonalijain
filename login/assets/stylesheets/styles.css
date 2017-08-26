@@ -1,0 +1,70 @@
+body{
+    margin:0px;
+    font-family: arial;
+}
+.clearfix:after{
+    display:table;
+    content:"";
+    clear:both;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+#container{
+    width:100%;
+    height:565px;
+}
+#upper_half{
+    background-color: rgb(146, 94, 105);
+    color: white;
+    width: 100%;
+    height:13%;
+    font-size: 14px;
+   
+}
+#upper_half #logo{
+    font-size: 40px;
+    text-align: center;
+    padding:10px 0px 10px 20px;
+}
+#upper_half #login {
+     padding:5px 20px 5px 20px;
+}
+#lower_half{
+    background: linear-gradient(white,rgb(216, 214, 214));
+    width:100%;
+    height:100%;
+}
+input{
+    border:1px solid black;
+}
+#lower_half{
+    display: flex;
+    align-content: space-around;
+}
+#lower_half .right_part,#lower_half .left_part{
+    width:50%;
+    height:100%;
+    padding:30px 100px 30px 30px;
+}
+#lower_half .right_part input{
+    height:33px;
+    border-radius: 3px;
+}
+#lower_half .right_part form{
+    font-size: 20px;
+}
+#lower_half .right_part button{
+    height: 40px;
+    width: 58%;
+    background-color: #6DAA58;
+}
+#lower_half .right_part p{
+    font-size: 13px;
+}
+#lower_half .right_part h1{
+    font-size: 43px;
+}

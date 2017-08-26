@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "ques":"what is your name",
+        "opt1":"abc",
+        "opt2":"xyz",
+        "opt3":"qwe",
+        "opt4":"yyu",
+        "mark":"false",
+        "ans":"opt1"
+    },
+     {
+         "id":2,
+        "ques":"what is your father's name",
+        "opt1":"abc",
+        "opt2":"xyz",
+        "opt3":"qwe",
+        "opt4":"yyu",
+         "mark":"false",
+         "ans":"opt4"
+    },
+     {
+         "id":3,
+        "ques":"what is your address",
+        "opt1":"abc",
+        "opt2":"xyz",
+        "opt3":"qwe",
+        "opt4":"yyu",
+         "mark":"false",
+        "ans":"opt3"
+    }
+]

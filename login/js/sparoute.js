@@ -1,0 +1,10 @@
+app2.config(function($routeProvider,$locationProvider){
+	$locationProvider.hashPrefix('');
+    $routeProvider.when("/physics",{
+        templateUrl:"physics.html"
+    }).when("/maths",{
+        templateUrl:"maths.html"
+    }).when("/chem",{
+        templateUrl:"chem.html"
+    }).otherwise({template:""});
+});

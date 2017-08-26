@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+    <script src="js/loginpage/module.js"></script>
+    <script src="js/loginpage/model.js"></script>
+    <script src="js/loginpage/controller.js"></script>
+</head>
+<body ng-app="loginapp" ng-controller="myctrl">
+    <div id="container" class="clearfix">
+       <div id="upper_half">
+           <div id="logo" class="left">
+               <b>ExamBook</b>
+           </div>
+           <div id="login" class="right">
+             <form  name="loginform" ng-submit="submit(loginform.$valid)" novalidate="novalidate" >
+              <table>
+                  <tr>
+                      <td><label for="">Username</label></td>
+                      <td><label for="">Password</label></td>
+                  </tr>
+                   <tr>
+                      <td><input type="email" ng-model="username" required autofocus>
+                       <span ng-show="loginform.usid.$touched && loginform.usid.$error.pattern">Invalid email</span>
+                           <span ng-show="loginform.usid.$touched && loginform.usid.$error.required"> email is required</span></td>
+                       <td><input type="password"  ng-model="pass" required>
+                        <span ng-show="loginform.usid.$touched && loginform.usid.$error.required"> email is required</span>
+                        </td>
+                       <td><button type="submit" ng-click="call(username,pass)" >Log In</button></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">Forgot password?</td>
+                  </tr>
+              </table>
+              </form>
+           </div>
+       </div>
+       <div id="lower_half">
+           <div class="left_part">
+           {{store.name}}
+           </div>
+           <div class="right_part">
+                <h1>Create an Account</h1>
+               <h4>Its's free and always will be.</h4>
+               <form>
+                   <table>
+                       <tr>
+                           <td><input type="text" placeholder="First Name" required autofocus></td>
+                           <td><input type="text" placeholder="Last Name" required></td>
+                       </tr>
+                       <tr>
+                           <td><input type="text" name="usid" placeholder="Mobile no or email" required>
+                          
+                           </td>
+                       </tr>
+                       <tr>
+                           <td><input type="text" placeholder="New password" required></td>
+                       </tr>
+                       <tr>
+                           <td> <label for="">Date Of Birth</label></td>
+                    <td><input type="date" required></td>
+                       </tr>
+                       <tr>
+                           <td><input type="radio">Female  <input type="radio">Male</td>
+                       </tr>
+                   </table>
+               <p>By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
+               <button type="submit">Create an Account</button>
+               </form>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

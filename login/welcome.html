@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/stylesheets/styles2.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+    <script src="js/welcomepage/module2.js"></script>
+    <script src="js/welcomepage/model2.js"></script>
+    <script src="js/welcomepage/controller2.js"></script>
+    <script src="js/sparoute.js"></script>
+</head>
+<body ng-app="mywelcome" ng-controller="myctrl2" ng-init="load()">
+  <header>
+      <div class="container-fluid">
+          <div class="row welcome">
+              <div class="col-md-2">
+                  <h1>Exam Book </h1>
+              </div>
+              <div class="col-md-offset-5 col-md-5 ">
+                  <h1>welcome {{name}} </h1>
+              </div>
+             
+          </div>
+          <div class="row user">
+              <div class="col-md-offset-4 col-md-8">
+                  <ul>
+                      <li><a href="#">Subjects</a></li>
+                      <li><a href="#/physics">Physics</a></li>
+                      <li><a href="#/maths">Maths</a></li>
+                      <li><a href="#/chem">Chemistry</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row view" >
+                <div class="col-md-3" class="text-center" id="myaccount">
+                   <div class="row">
+                        <div class=" col-md-9">
+                            <img class="img-responsive img-circle" ng-src="{{url}}" alt="">
+                        </div>
+                        <div class="col-md-offset-3"></div>
+                    </div>
+                   <div class="row">
+                        <div class="col-md-12">
+                          <h4>Name: {{name}}</h4>
+                        </div>
+                    </div>
+                <div class="row">
+                        <div class="col-md-12">
+                          <h4>Email-id:{{email}} </h4>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12">
+                            <h4>Address:{{address}} </h4>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12">
+                            <button ng-click="close()" class="logout">Log Out</button>
+                        </div>
+                </div>
+                
+                </div>
+                <div class="col-md-9 ">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+</body>
+</html>

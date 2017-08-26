@@ -1,0 +1,26 @@
+<div class="row"  ng-change="watch(j)">
+       
+        <div  ng-repeat="i in quesobj| filter:sno"  >
+        <div ng-class="{circle: true, red:i.mark==true}"><h1>1</h1></div>
+        <div  ng-class="{circle: true, red:i.mark==true}"><h1>2</h1></div>
+        <div  ng-class="{circle: true, red:i.mark==true}"><h1>3</h1></div>
+        <div  ng-class="{circle: true, red:i.mark==true}"><h1>4</h1></div>
+    
+        <div class="col-md-12">
+        <h4>{{i.id}}.{{i.ques}}</h4><br>
+        <form ng-init='radio=""' >
+        <input type="radio" name="option" value="opt1" ng-model="radio" ng-change="mark(i,radio)"  > {{i.opt1}}<br>
+        <input type="radio" name="option" value="opt2"  ng-model="radio"  ng-change="mark(i,radio)">  {{i.opt2}}<br>
+        <input type="radio" name="option" value="opt3"  ng-model="radio" ng-change="mark(i,radio)" >  {{i.opt3}}<br>
+        <input type="radio" name="option" value="opt4"   ng-model="radio" ng-change="mark(i,radio)"> {{i.opt4}}<br><br>
+        <button ng-click="showAnswer(radio,i)" data-toggle="collapse" data-target="#answer">show answer</button>
+        <button ng-click="next(i)">Next</button>
+        <button ng-click="previous()">Previous</button><br><br>
+         </form>
+         <div id="answer">
+         <h1>{{answer}}</h1>
+         </div>
+         </div>
+       </div>
+ </div>
+
