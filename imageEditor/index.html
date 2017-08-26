@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+<header>
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
+              <h1> image editor</h1>
+           </div>
+       </div>
+       <div class="row nav">
+           <div class="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12" align="center">
+               <ul>
+                   <li><a href="#" class="effects">none</a></li>
+                   <li><a href="#" class="effects">blur</a></li>
+                   <li><a href="#" class="effects">brightness</a></li>
+                   <li><a href="#" class="effects">contrast</a></li>
+                   <li><a href="#" class="effects">grayscale</a></li>
+                   <li><a href="#" class="effects">hue-rotate</a></li>
+                   <li><a href="#" class="effects">invert</a></li>
+                   <li><a href="#" class="effects">opacity</a></li>
+                   <li><a href="#" class="effects">saturate</a></li>
+                   <li><a href="#" class="effects">sepia</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</header>
+<main >
+    <div class="container-fluid">
+        <div class="row">
+            <div id="image_show" class="col-lg-offset-1 col-lg-10 col-lg-offset-1 ">
+              <div class="row">
+                  <div class="col-lg-12" align="center">
+                    <div class="upload">
+                       <table>
+                           <tr>
+                               <td><h4>Upload your Image</h4></td>
+                               <td><input type="file" id="file"></td>
+                               <td><input type="range" value="60" min="0" max="100" step="5" id="range"></td>
+                           </tr>
+                       </table>
+                    </div>
+                  </div>
+              </div>
+               <div class="row">
+                   <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3">
+                      <div class="image">
+                        <img  id="image" src="assets/images/5238395-images-background-wallpaper.jpg" alt="">  
+                      </div>                       
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="assets/jquery-3.2.1.min.js"></script>
+     <script src="assets/main.js"></script>
+</body>
+</html>

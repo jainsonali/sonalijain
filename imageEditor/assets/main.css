@@ -1,0 +1,81 @@
+h1 {
+    color: red;
+}
+
+body {
+   background-image:url("images/IMG_33280.jpg");
+background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: rgba(0,0,0,0.7);
+}
+header h1{
+    color: rgba(255,255,255,0.7);
+    text-shadow: 2px 2px 5px white;
+    font-family: 'Arvo', serif;
+    font-size: 70px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+@media (max-width:600px){
+    header h1{
+        font-size: 30px;
+    }
+}
+@media (max-width:792px){
+    header h1{
+        font-size: 39px;
+    }
+}
+header .nav{
+    background-color: rgba(255,255,255,0.2);
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li a{
+    padding: 15px;
+    color: whitesmoke;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+}
+@media (max-width:600px){
+    header ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width:792px){
+     header ul {
+       display: block;
+    }
+}
+header ul li a:hover{
+    color:whitesmoke;
+    transform: scale(1.1,1.1);
+    text-decoration: none;
+}
+main .upload table tr td{
+    color: white;
+    padding: 10px;
+}
+main .upload table tr td input{
+    background-color: rgba(255,255,255,0.3);
+}
+main .upload table tr td input[type="range"]{
+    display: none;
+}
+main #image_show{
+    background-color:  rgba(255,255,255,0.1);
+}
+main #image_show .image{
+    margin-bottom: 50px;
+}
+main #image_show .image img{
+    height: 100%;
+    width: 100%;
+}
