@@ -1,0 +1,375 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#container{
+   background-image: url("images/1.jpg");
+    background-attachment: fixed;
+    width:100%;
+    height:700px;
+}
+#header{
+    color: white;
+     text-align: center;
+}
+#header .logo{
+    background-color: rgba(0,0,0,0.5);
+}
+#header .logo h1{
+    margin:0px;
+   text-transform: uppercase;
+    letter-spacing: 30px;
+    padding: 20px;
+    font-size: 45px;
+    color: white;
+   
+
+}
+.navigation{
+    background-color: #212121;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+.navigation ul{
+    list-style: none;
+    text-align: center;
+}
+.navigation .center_nav{
+    width:60%;
+    padding:0px 20px;
+}
+.navigation  .center_nav ul li{
+    display:inline-block;
+    padding:0px 35px;
+}
+.navigation .left_nav{
+    padding:20px 30px;
+}
+
+.navigation .right_nav ul li{
+     display:inline-block;
+    padding:0px 10px;
+}
+#header .navigation ul li:hover a{
+    color:#FEC303;
+}
+#textpart1{
+    width:100%;
+    height: 362px;
+    margin: 120px 0px 0px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#textpart1:after{
+   content: "";
+    position: absolute;
+    border-bottom: 9px solid white;
+    top: 67%;
+    height: 10px;
+    width: 80%;
+    right: 10%;
+}
+#textpart1 h1{
+    font-size: 180px;
+    margin: 0px;
+    color: white;
+    animation:texts 1s linear infinite;
+}
+@keyframes texts{
+    0%{content:"DONEC"}
+    45%{content:"DONEC"}
+     50%{content:"VIVAMUS"}
+     95%{content:"VIVAMUS"}
+     100%{content:"DONEC"}
+}
+#textpart1 h3{
+    color: white;
+    font-size: 14px;
+    margin:0px 0px 45px 0px;
+   letter-spacing: 3px; 
+}
+#textpart1 button:hover{
+    background-color: transparent;
+    color:white;
+    border:2px solid white;
+}
+button{
+    height:52px;
+    width:10%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FEC303;
+}
+#section1{
+    margin:0px 100px;
+}
+#section1 h2{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+}
+#section1 .boxing,#section1 .boxing_2{
+    width:48%;
+    overflow: hidden;
+      
+}
+#section1 .boxing img{
+    width:100%;
+    box-shadow: 2px 2px 18px 3px #736c66;
+    transition: 1s;
+}
+#section1 .boxing p,#section2 .wrap .service1 p,#section3 p{
+    line-height: 25px;
+    font-size: 15px;
+    color:#999999;
+    margin:0px;
+    padding:20px;
+}
+#section1 .boxing img:hover{
+    transform: scale(1.2,1.2);
+}
+#section1 .timing{
+    width:100%;
+    height:200px;
+    margin:0px 0px 60px 0px;
+} 
+#section1 .timing .timing_1{
+    width:25%;
+    height:100%;
+    padding: 60px 0px;
+    color:black;
+    background-color: gainsboro;
+    text-align: center;
+    border-right: 1px dotted black;
+}
+ #section1 #tim_1
+{
+    background-color: #FEC303;
+}
+ #section1 #tim_1 .span_1{
+    font-size: 26px;
+    color:white;
+    line-height: 35px;
+     text-transform: uppercase;
+     
+}
+#section1 .span_2{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+}
+#section1 .timing .timing_1:hover {
+    background-color: #FEC303;
+}
+#section1 .boxingimage img{
+    width:100%;
+    height:100%;
+     transition: 1s;
+}
+#section1 .boxingimage{
+    width:100%;
+}
+#section1 .boxingimage .column{
+   width: 45%;
+    height: 185px;
+    overflow: hidden;
+    box-shadow: -1px 1px 22px 4px #736c66;
+    
+}
+#section1 .boxingimage .column img:hover{
+    transform: scale(1.4,1.4);
+}
+#section2{
+    width:100%;
+    height:485px;
+    background-color: #F4F4F4;
+    padding:0px 120px;
+     text-align: center;
+}
+#section2 h1{
+   
+    font-size: 50px;
+    padding:50px 0px 20px 0px;
+    font-weight: normal;
+       font-family: 'Arvo', serif;
+    text-transform: uppercase;
+}
+#section2 .wrap .service1{
+    width:25%;
+    height:100%;
+}
+#section2 .wrap .service1 .service_icon{
+    height:100px;
+    width:100px;
+    margin:0px 0px 0px 80px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #F4F4F4;
+}
+#section2 .wrap .service1 .service_icon .fa{
+   font-size: 45px;
+    position: absolute;
+    top: 24%;
+    right: 20%;
+    color:dimgrey;
+    left:20px;
+    transition: 0.5s;
+}
+#section2 .wrap .service1:hover .service_icon{
+    background-color:  #FEC303;
+}
+#section2 .wrap .service1:hover .service_icon .fa{
+    transform: scale(0.5,0.5);
+}
+
+#section6{
+    width:100%;
+    height:400px;
+    background-image: url("images/5.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: left;
+    color:white;
+}
+#section6 h1{
+   font-size: 69px;
+    width: 100%;
+    font-family: 'Arvo', serif;
+    padding: 60px 0px 0px 100px;
+    margin: 0px;
+}
+#section6 p{
+    font-size: 14px;
+    width: 80%;
+    padding: 0px 100px 20px 100px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#section6 button{
+    background-color: transparent;
+    margin:0px 0px 0px 100px;
+    color:white;
+}
+#section3{
+    width:100%;
+    height: 400px;
+    color:black;
+    text-align: center;
+}
+#section3 h1,#section4 h1,#section5 h1{
+     font-size: 50px;
+ padding: 24px 0px 0px 0px;
+    font-weight: normal;
+       font-family: 'Arvo', serif;
+    text-transform: uppercase;
+    
+}
+#section3 .icons{
+   background-image: url("images/15.jpg");
+    height:150px;
+    background-size: 100% 100%;
+    margin:0px 0px 0px 44%;
+    border:1px solid lightgrey;
+    width:150px;
+    border-radius: 50%;
+    animation:pics 13s linear infinite;
+}
+@keyframes pics{
+    0%{background-image: url(images/15.jpg);}
+    30%{background-image: url(images/15.jpg);}
+    33.33%{background-image: url("images/14.jpg");}
+    62%{background-image: url("images/14.jpg");}
+    66.66%{background-image: url("images/16.jpg");}
+     98%{background-image: url("images/16.jpg");}
+     100%{background-image: url("images/15.jpg");}
+    
+}
+#section3 span,#section3 h4{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+#section3 h4{
+    color:#FEC303;
+}
+#section4{
+     width:100%;
+    height: 570px;
+   background-image: url("images/5.jpg");
+    background-attachment: fixed;
+    text-align: center;
+    color:white;
+}
+#section4 .wrap{
+    height:300px;
+    margin:100px;
+}
+#section4 .wrap .divs{
+    width:22%;
+    height:350px;
+}
+#section4 #div1{
+    background-image: url("images/7.jpg");
+    background-size: 100% 100%;
+}
+#section4 #div2{
+    background-image: url("images/8.jpg");
+    background-size: 100% 100%;
+}
+#section4 #div3{
+    background-image: url("images/10.jpg");
+    background-size: 100% 100%;
+}
+#section4 #div4{
+    background-image: url("images/9.jpg");
+    background-size: 100% 100%;
+}
+#section5{
+    width:100%;
+    height:265px;
+    color:black;
+    text-align: center;
+}
+#section5 input{
+    height:52px;
+    width:35%;
+    margin: 30px;
+}
+#section5 button:hover{
+    background-color: white;
+    border:2px solid black;
+}
+#footer{
+    width:100%;
+    height:350px;
+    background-color: #0F1215;
+}
