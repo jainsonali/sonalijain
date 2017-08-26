@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="angular.min.js"></script>
+    <script src="module.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="marksheet">
+   <div ng-controller="myctrl" >
+       <div id="entries" >
+         <h1>MARKSHEET</h1>
+           <table class="tab">
+               <tr>
+                   <td>
+                       <label for="">Name::</label>
+                   </td>
+                   <td>
+                       <input type="text" placeholder="name" ng-model="name">
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                       <label for="">Roll No::</label>
+                   </td>
+                   <td>
+                       <input type="text" placeholder="rollno" ng-model="rollno">
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                       <label for="">Class::</label>
+                   </td>
+                   <td>
+                       <input type="text" placeholder="class name with section" ng-model="class">
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <label for="">marks::</label>
+                   </td>
+                   <td>
+                       <input type="text" placeholder="sub 1" ng-init="sub1=0" ng-model="sub1">
+                   </td>
+                   <td>
+                       <input type="text" placeholder="sub 2" ng-init="sub2=0" ng-model="sub2">
+                   </td>
+                   <td>
+                       <input type="text" placeholder="sub 3" ng-init="sub3=0" ng-model="sub3">
+                   </td>
+                   <td>
+                       <input type="text" placeholder="sub 4" ng-init="sub4=0" ng-model="sub4">
+                   </td>
+                   <td>
+                       <input type="text" placeholder="sub 5" ng-init="sub5=0" ng-model="sub5">
+                   </td>  
+               </tr>
+               <tr>
+                    <td>
+                       <button ng-click="compute_total()">Compute Total</button>
+                   </td>
+                    <td>
+                       <button ng-click="compute_percent()">Compute Percentage</button>
+                   </td>
+                    <td>
+                       <button ng-click="compute_grade()">Grade</button>
+                   </td>
+               </tr>
+           </table>
+           <br>
+           <table class="tab">
+               <tr>
+                   <td>
+                       Total::{{total}}
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                       Percentage::{{percentage}}
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                       Grade::{{grade}}
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                      <button ng-click="add()">Add Record</button>
+                   </td>
+                   <td>
+                       search::<input type="checkbox" ng-model="show">
+                       <input type="text" ng-show="show" ng-model="search_by">
+                    </td>
+               </tr>
+           </table>
+       </div>
+       <br>
+       <hr>
+       <br>
+       <div>
+           <table id="data">
+               <thead>
+                   <tr>
+                       <td>S.No</td>
+                       <td>Name</td>
+                       <td>Roll No</td>
+                       <td>class</td>
+                       <td>marks</td>
+                       <td>total</td>
+                       <td>Percentage</td>
+                       <td>Grade</td>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr ng-repeat="i in dataarray|filter:search_by track by $index">
+                       <td>{{i.id}}</td>
+                  <td>{{i.Name}}</td>
+                  <td>{{i.Rollno}}</td>
+                  <td>{{i.Class}}</td>
+                  <td>{{i.marks}}</td>
+                  <td>{{i.total}}</td>
+                  <td>{{i.percentage}}</td>
+                  <td>{{i.Grade}}</td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    margin:0px;
+}
+#data tr td{
+    border:2px solid teal;
+    height:5%;
+    width:10%;
+}
+#entries{
+    text-align: center;
+}
+.tab tr{
+    margin:10px;
+    font-size: 20px;
+}
